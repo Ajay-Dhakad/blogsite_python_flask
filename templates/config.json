@@ -1,0 +1,17 @@
+
+{
+    "params": {
+      "blog_name":"TheNerdyCoder",
+      "blog_tagline":"Exploring The World,One Page At A Time",
+      "secret_key": "your_secret_key",
+      "mail_username": "your_email@gmail.com",
+      "mail_password": "your_email_password",
+      "mail_recipient": "recipient_email@gmail.com",
+      "local_uri": "sqlite:///nerdycoder",
+      "prod_uri": "your_production_database_uri",
+      "admin_user": "admin_username",
+      "admin_pass": "admin_password",
+      "upload_folder": "static//assets//img",
+      "posts_per_page": 5
+    }
+  }

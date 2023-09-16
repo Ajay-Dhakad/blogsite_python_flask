@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+        <!-- Page Header-->
+        {%block body%}
+        <header class="masthead" style="background-image: url(' {{url_for('static',filename='assets/img/home-bg.jpg' ) }}  ')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Admin Panel</h1>
+                            <span class="subheading">Manage Your Posts And Blogs</span>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+
+
+
+                  <h1>Add/Edit Your Posts</h1>
+                  <br>
+
+
+
+
+                  <form id="contactForm"  method="post" action="/edit/{{sno}}" >
+                    <div class="form-floating">
+                        <input class="form-control" id="title" name="title" type="text" placeholder="Enter your name..." data-sb-validations="required" value="{{post.title}}" />
+                        <label for="name">TITLE</label>
+                       
+                    </div>
+                    <div class="form-floating">
+                        <input class="form-control" id="slug" type="text" name="slug" placeholder="Enter your email..." data-sb-validations="" />
+                        <label for="email">slug</label>
+                        
+                    <div class="form-floating">
+                        <input class="form-control" value="{{post.tagline}}" id="tagline" type="text" name="tagline" placeholder="Enter your phone number..." data-sb-validations="required" />
+                        <label for="phone">TAGLINE</label>
+                        
+                    </div>
+                    <div class="form-floating">
+                        <input class="form-control" type="text" value="{{post.content}}" id="content" name="content" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></input>
+                        <label for="message">CONTENT</label>
+
+                        <div class="form-floating">
+                            <input class="form-control" value="{{post.img_file}}" id="img_file" type="text" name="img_file" placeholder="Enter your phone number..." data-sb-validations="required" />
+                            <label for="phone">IMAGE FILE</label>
+                            
+                        </div>
+                        
+                    <br />
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+              
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    
+                    <!-- Submit Button-->
+                    <button   class="btn btn-primary" id="submitButton" type="submit">DONE!</button>
+                </form>
+                     
+                    <!-- Post preview-->
+
+                    <!-- FETCH IT USING FOR LOOP USING DATABASE -->
+
+
+                    
+
+                    
+                    <!-- Pager-->
+                </div>
+            </div>
+        </div>
+
+        {%endblock%}
+       
