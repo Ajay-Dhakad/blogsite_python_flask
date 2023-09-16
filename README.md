@@ -100,10 +100,10 @@ Follow these steps to set up and run the project on your local machine.
 
 
 1. **Visit the homepage to view blog posts and navigate to individual post pages.**
-2.**Use the "/dashboard" route to log in as an administrator and manage blog posts.**
-3.**To create a new blog post or edit an existing one, log in as an administrator and access the "/edit" route.**
-4.**Use the "/contact" route to send messages through the contact form.**
-5.**Log out using the "/logout" route.**
+2. **Use the "/dashboard" route to log in as an administrator and manage blog posts.**
+3. **To create a new blog post or edit an existing one, log in as an administrator and access the "/edit" route.**
+4. **Use the "/contact" route to send messages through the contact form.**
+5. **Log out using the "/logout" route.**
 
 
 ## Contributing
