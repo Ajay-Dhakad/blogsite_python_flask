@@ -6,7 +6,6 @@ import json
 import os 
 from werkzeug.utils import secure_filename
 from sqlalchemy import desc
-from sqlalchemy.dialects.mysql import INTEGER, VARCHAR, TEXT, DATETIME
 
 with open("templates/config.json","r") as c:        #configurable parameters from json file to change without touching the code
 
